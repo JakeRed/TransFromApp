@@ -1,0 +1,4 @@
+include ':gradle-costtime-plugin'
+include ':gradle-lint-plugin'
+include ':app'
+rootProject.name = "TransFromApp"
