@@ -1,0 +1,26 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation localGroovy()
+    implementation gradleApi()
+    implementation "com.android.tools.build:gradle:4.0.1"
+    implementation 'org.ow2.asm:asm:7.1'
+    implementation 'org.ow2.asm:asm-commons:7.1'
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            //本地的Maven地址
+            repository(url: 'file:///Users/zhengkaihong/work/maven-lib/')
+        }
+    }
+}
+
+group='com.zkh.costtime'
+version='1.0.0'
