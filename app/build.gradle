@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.zkh.cleaner'
+apply plugin: 'com.zkh.costtime'
 
 lintCleaner {
     lintXmlPath "${buildDir}/reports/lint-results.xml"
